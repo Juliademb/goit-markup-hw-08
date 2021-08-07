@@ -75,15 +75,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 767px) {
-  .header__navigation {
-    display: none;
-  }
 }
 
 .header__logo {
@@ -143,6 +134,14 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__conteiner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .site-nav {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -163,8 +162,14 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .site-nav {
-    margin-right: 305px;
+    margin-right: 0px;
     padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
   }
 }
 
@@ -208,7 +213,12 @@ ul {
   padding-top: 21px;
   padding-bottom: 21px;
   width: 138px;
-  margin-bottom: -10px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -219,14 +229,11 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 370px;
+    width: 333px;
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-bottom: 0;
   }
-}
-
-.contacts__link {
-  margin-bottom: 10px;
 }
 
 .contacts__link {
@@ -244,21 +251,29 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts__link {
     font-size: 14px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts__mail {
-    width: 161px;
-  }
+.contacts__link:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts__phone {
-    width: 142px;
+  .contacts__link:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
