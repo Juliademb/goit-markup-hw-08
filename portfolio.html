@@ -138,7 +138,24 @@
             <ul class="cards-section__list list ">
                 <li class="cards-section__item ">
                     <div class="project-card">
-                        <img class="project-card__image" src="./images/tehnokriack.jpg" alt="технокряк" width="370">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="./images/desktope/portfolio/img.jpg 1x, ./images/desktope/portfolio/img@2x.jpg 2x">
+                            <source media="(min-width:1200px)" srcset="./images/desktope/portfolio/img.webp 1x, ./images/desktope/portfolio/img@2x.webp 2x"
+                                type="image/webp">
+                        
+                            <source media="(min-width:768px)" srcset="./images/tablet/portfolio/img.jpg 1x, ./images/tablet/portfolio/img@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="./images/tablet/portfolio/img.webp 1x, ./images/tablet/portfolio/img@2x.webp 2x"
+                                type="image/webp">
+                        
+                            <source media="(max-width:767px)" srcset="./images/mobile/portfolio/img.jpg 1x, ./images/mobile/portfolio/img@2x.jpg 2x">
+                            <source media="(max-width:767px)" srcset="./images/mobile/portfolio/img.webp 1x, ./images/mobile/portfolio/img@2x.webp 2x"
+                                type="image/webp">
+                        
+                            <img srcset="./images/desktope/portfolio/img.jpg 1x, ./images/desktope/portfolio/img@2x.jpg 2x" 
+                            class="project-card__image"
+                                alt="форо разработчика"
+                                src="./images/tehnokriack.jpg" alt="технокряк" width="370" >
+                        </picture>
                         <div class="project-card--hover">
                             <p class="project-card__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
