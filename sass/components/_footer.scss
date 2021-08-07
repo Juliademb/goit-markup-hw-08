@@ -133,7 +133,6 @@
   }
 
   &__form {
-    position: relative;
     margin-top: 20px;
     display: block;
     text-align: center;
@@ -187,6 +186,7 @@
     padding: 10px 28px;
     border: none;
     margin: 0 auto;
+    z-index: 0;
 
     align-items: center;
     font-style: normal;

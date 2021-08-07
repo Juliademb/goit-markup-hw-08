@@ -46,12 +46,12 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
+  }
 
-    &__mobile-svg {
-      width: 40px;
-      height: 40px;
-      fill: #212121;
-    }
+  &__mobile-svg {
+    width: 40px;
+    height: 40px;
+    fill: #212121;
   }
 
   &__conteiner {
@@ -205,7 +205,7 @@
 
 .mobile {
   position: fixed;
-  z-index: 99;
+  z-index: 100;
   top: 0;
   width: 100vw;
   height: 100vh;
