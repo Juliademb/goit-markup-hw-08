@@ -822,12 +822,14 @@ ul {
   padding: 0;
   padding-bottom: 60px;
   min-width: 206px;
+  margin-top: 5px;
 }
 
 @media screen and (min-width: 1200px) {
   .welcome {
     margin-left: 70px;
     padding-bottom: 0;
+    margin-top: 0;
   }
 }
 
